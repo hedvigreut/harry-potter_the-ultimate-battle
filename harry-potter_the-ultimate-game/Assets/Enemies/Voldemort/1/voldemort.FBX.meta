@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 0237c5df05ada46978379d6344d7a504
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 49904098_obj
+    100002: 49905ba0_obj
+    100004: 4a5b0060_obj
+    100006: 4a5b1b68_obj
+    100008: 4a5b3670_obj
+    100010: 4a5b5178_obj
+    100012: 4a5b6c80_obj
+    100014: 4a5ba290_obj
+    100016: 4a5bbd98_obj
+    100018: 4a5bd8a0_obj
+    100020: 4dcba320_obj
+    100022: 4dcd89b0_obj
+    100024: Plane01
+    100026: //RootNode
+    100028: voldemort
+    400000: 49904098_obj
+    400002: 49905ba0_obj
+    400004: 4a5b0060_obj
+    400006: 4a5b1b68_obj
+    400008: 4a5b3670_obj
+    400010: 4a5b5178_obj
+    400012: 4a5b6c80_obj
+    400014: 4a5ba290_obj
+    400016: 4a5bbd98_obj
+    400018: 4a5bd8a0_obj
+    400020: 4dcba320_obj
+    400022: 4dcd89b0_obj
+    400024: Plane01
+    400026: //RootNode
+    400028: voldemort
+    2100000: No Name
+    2100002: 'Material #25'
+    2100004: Material__511
+    2100006: Material__520
+    2100008: Material__519
+    2100010: Material__515
+    2100012: Material__516
+    2100014: Material__517
+    2100016: Material__518
+    2100018: Material__512
+    2100020: Material__521
+    2100022: Material__513
+    2300000: 49904098_obj
+    2300002: 49905ba0_obj
+    2300004: 4a5b0060_obj
+    2300006: 4a5b1b68_obj
+    2300008: 4a5b3670_obj
+    2300010: 4a5b5178_obj
+    2300012: 4a5b6c80_obj
+    2300014: 4a5ba290_obj
+    2300016: 4a5bbd98_obj
+    2300018: 4a5bd8a0_obj
+    2300020: 4dcba320_obj
+    2300022: 4dcd89b0_obj
+    2300024: Plane01
+    3300000: 49904098_obj
+    3300002: 49905ba0_obj
+    3300004: 4a5b0060_obj
+    3300006: 4a5b1b68_obj
+    3300008: 4a5b3670_obj
+    3300010: 4a5b5178_obj
+    3300012: 4a5b6c80_obj
+    3300014: 4a5ba290_obj
+    3300016: 4a5bbd98_obj
+    3300018: 4a5bd8a0_obj
+    3300020: 4dcba320_obj
+    3300022: 4dcd89b0_obj
+    3300024: Plane01
+    4300000: Plane01
+    4300002: 4dcd89b0_obj
+    4300004: 4dcba320_obj
+    4300006: 4a5bd8a0_obj
+    4300008: 49905ba0_obj
+    4300010: 4a5b0060_obj
+    4300012: 4a5b6c80_obj
+    4300014: 4a5b5178_obj
+    4300016: 4a5b3670_obj
+    4300018: 4a5b1b68_obj
+    4300020: 4a5bbd98_obj
+    4300022: 49904098_obj
+    4300024: 4a5ba290_obj
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

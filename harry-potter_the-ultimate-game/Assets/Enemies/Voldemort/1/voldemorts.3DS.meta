@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: eb72b2f2c8ba74990b593a387f96c764
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 49904098_o
+    100002: 49905ba0_o
+    100004: 4a5b0060_o
+    100006: 4a5b1b68_o
+    100008: 4a5b3670_o
+    100010: 4a5b5178_o
+    100012: 4a5b6c80_o
+    100014: 4a5ba290_o
+    100016: 4a5bbd98_o
+    100018: 4a5bd8a0_o
+    100020: 4dcba320_o
+    100022: 4dcd89b0_o
+    100024: Plane01
+    100026: voldemort
+    100028: //RootNode
+    400000: 49904098_o
+    400002: 49905ba0_o
+    400004: 4a5b0060_o
+    400006: 4a5b1b68_o
+    400008: 4a5b3670_o
+    400010: 4a5b5178_o
+    400012: 4a5b6c80_o
+    400014: 4a5ba290_o
+    400016: 4a5bbd98_o
+    400018: 4a5bd8a0_o
+    400020: 4dcba320_o
+    400022: 4dcd89b0_o
+    400024: Plane01
+    400026: voldemort
+    400028: //RootNode
+    2100000: 'Material #25'
+    2100002: Material__511
+    2100004: Material__520
+    2100006: Material__519
+    2100008: Material__515
+    2100010: Material__516
+    2100012: Material__517
+    2100014: Material__518
+    2100016: Material__512
+    2100018: Material__521
+    2100020: Material__513
+    2300000: 49904098_o
+    2300002: 49905ba0_o
+    2300004: 4a5b0060_o
+    2300006: 4a5b1b68_o
+    2300008: 4a5b3670_o
+    2300010: 4a5b5178_o
+    2300012: 4a5b6c80_o
+    2300014: 4a5ba290_o
+    2300016: 4a5bbd98_o
+    2300018: 4a5bd8a0_o
+    2300020: 4dcba320_o
+    2300022: 4dcd89b0_o
+    2300024: Plane01
+    3300000: 49904098_o
+    3300002: 49905ba0_o
+    3300004: 4a5b0060_o
+    3300006: 4a5b1b68_o
+    3300008: 4a5b3670_o
+    3300010: 4a5b5178_o
+    3300012: 4a5b6c80_o
+    3300014: 4a5ba290_o
+    3300016: 4a5bbd98_o
+    3300018: 4a5bd8a0_o
+    3300020: 4dcba320_o
+    3300022: 4dcd89b0_o
+    3300024: Plane01
+    4300000: Plane01
+    4300002: 4dcd89b0_o
+    4300004: 4dcba320_o
+    4300006: 4a5bd8a0_o
+    4300008: 49905ba0_o
+    4300010: 4a5b0060_o
+    4300012: 4a5b6c80_o
+    4300014: 4a5b5178_o
+    4300016: 4a5b3670_o
+    4300018: 4a5b1b68_o
+    4300020: 4a5bbd98_o
+    4300022: 49904098_o
+    4300024: 4a5ba290_o
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

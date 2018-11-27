@@ -1,0 +1,168 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 01.06.2016 15:45:57
+
+newmtl wire_255255255
+	Ns 32
+	d 1
+	Tr 1
+	Tf 1 1 1
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Material__25
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4c6c0.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4c6c0.dds
+
+newmtl Material__511
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4c6c0.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4c6c0.dds
+
+newmtl Material__520
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\30b43940.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\30b43940.dds
+
+newmtl Material__519
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4c5a0.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4c5a0.dds
+
+newmtl Material__515
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4cb60.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4cb60.dds
+
+newmtl Material__516
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4c6c0.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4c6c0.dds
+
+newmtl Material__517
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0275 0.0275 0.0275
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\f8a0020.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\f8a0020.dds
+	map_d D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\f8a0020.dds
+
+newmtl Material__518
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0392 0.0392 0.0392
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\f89fcc0.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\f89fcc0.dds
+	map_d D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\f89fcc0.dds
+
+newmtl Material__512
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4cb60.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4cb60.dds
+
+newmtl Material__521
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4c100.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4c100.dds
+
+newmtl Material__513
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4cb60.dds
+	map_Kd D:\3d model new\1388324548_ch_lord_voldemortp3dm.ru\31d4cb60.dds
