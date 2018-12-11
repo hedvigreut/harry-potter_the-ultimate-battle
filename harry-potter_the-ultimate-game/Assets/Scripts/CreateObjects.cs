@@ -10,9 +10,10 @@ public class CreateObjects : MonoBehaviour {
     public GameObject Door;
 
     List<GameObject> objectNameList = new List<GameObject>();
+    private GameObject playingObject;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
         objectNameList.Add(Soulsucker);
         objectNameList.Add(Monster);
         objectNameList.Add(Door);
@@ -20,13 +21,13 @@ public class CreateObjects : MonoBehaviour {
         Random rnd = new Random();
         int arrayNumber = Random.Range(0, 3);
 
-        GameObject playingObject = objectNameList[arrayNumber];
+        playingObject = objectNameList[arrayNumber];
 
         if (playingObject.tag == "Soul")
         {
             Debug.Log("SOUL");
             playingObject.transform.localScale = new Vector3(2f, 2f, 2f);
-            playingObject.transform.position= new Vector3(0, 0, 0);
+            playingObject.transform.position = new Vector3(0, 0, 0);
             //playingObject.transform.Translate(0, 0, 0);
         } else if (playingObject.tag == "Monster")
         {
@@ -44,10 +45,16 @@ public class CreateObjects : MonoBehaviour {
         }
 
         Instantiate(playingObject);
+        //yield return new WaitForSeconds(3);
+
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update() {
+        DestroyObject();
+    }
+
+    void DestroyObject() {
+        Destroy(playingObject, 5);
+    }
 }
