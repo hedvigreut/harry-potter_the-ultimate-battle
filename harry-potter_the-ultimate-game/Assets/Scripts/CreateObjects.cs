@@ -24,13 +24,23 @@ public class CreateObjects : MonoBehaviour {
 
         if (playingObject.tag == "Soul")
         {
+            Debug.Log("SOUL");
             playingObject.transform.localScale = new Vector3(2f, 2f, 2f);
+            playingObject.transform.position= new Vector3(0, 0, 0);
+            //playingObject.transform.Translate(0, 0, 0);
         } else if (playingObject.tag == "Monster")
         {
+            Debug.Log("MONSTER");
             playingObject.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+            playingObject.transform.position = new Vector3(0, 0, 0);
+            // playingObject.transform.Translate(0,0,0);
+
         } else if (playingObject.tag == "Door")
         {
+            Debug.Log("DOOR");
             playingObject.transform.localScale = new Vector3(1f, 1f, 1f);
+            playingObject.transform.position = new Vector3(0, 2, 0);
+            //playingObject.transform.Translate(0, 0, 0);
         }
 
         Instantiate(playingObject);
