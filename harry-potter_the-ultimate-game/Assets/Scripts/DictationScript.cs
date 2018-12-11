@@ -20,11 +20,18 @@ public class DictationScript : MonoBehaviour
 
     void Start()
     {
-        keywordActions.Add("Open", Up);
+        //keywordActions.Add("Open", Up);
+        //keywordActions.Add("Avaada Kedavra", Down);
+        //keywordActions.Add("Kill", Left);
+        //keywordActions.Add("Right", Right);
+        //keywordActions.Add("Down", Heleo);
+
+        keywordActions.Add("Soul sucker", Up);
         keywordActions.Add("Avaada Kedavra", Down);
         keywordActions.Add("Kill", Left);
-        keywordActions.Add("Right", Right);
-        keywordActions.Add("Down", Heleo);
+        keywordActions.Add("Monster", Right);
+        keywordActions.Add("Door", Heleo);
+
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognized;
