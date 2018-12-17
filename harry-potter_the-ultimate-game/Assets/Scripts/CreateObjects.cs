@@ -12,8 +12,10 @@ public class CreateObjects : MonoBehaviour {
     public GameObject Soulsucker;
     public GameObject Monster;
     public GameObject Door;
+    public GameObject WinCanvas;
 
     public Text countText;
+    public float levelPoints;
     public float points;
 
     public float waitTime = 2f;
@@ -33,6 +35,7 @@ public class CreateObjects : MonoBehaviour {
         createObject();
 
         float points = 0.0f;
+        float levelPoints = 0.0f;
         updatePoints();
 
         keywordActions.Add("Soul sucker", DestroyByVoiceS);
@@ -65,6 +68,7 @@ public class CreateObjects : MonoBehaviour {
         {
             DestroyObject();
             points += 1;
+            levelPoints += 1;
             updatePoints();
             Invoke("createObject", waitTime);
         }
@@ -72,6 +76,7 @@ public class CreateObjects : MonoBehaviour {
         {
             DestroyObject();
             points += 1;
+            levelPoints += 1;
             updatePoints();
             Invoke("createObject", waitTime);
         }
@@ -79,6 +84,7 @@ public class CreateObjects : MonoBehaviour {
         {
             DestroyObject();
             points += 1;
+            levelPoints += 1;
             updatePoints();
             Invoke("createObject", waitTime);
         }
@@ -87,34 +93,20 @@ public class CreateObjects : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        /*
-        if (playingObject.tag == "Soul" && Input.GetKeyDown("n"))
-        {
-            DestroyObject();
-            points += 1;
-            updatePoints();
-            Invoke("createObject", waitTime);
-        }
-        else if (playingObject.tag == "Monster" && Input.GetKeyDown("m"))
-        {
-            DestroyObject();
-            points += 1;
-            updatePoints();
-            Invoke("createObject", waitTime);
-        }
-        else if (playingObject.tag == "Door" && Input.GetKeyDown("b"))
-        {
-            DestroyObject();
-            points += 1;
-            updatePoints();
-            Invoke("createObject", waitTime);
-        }
-*/
-
-        if (points == 4f)
+        if (levelPoints == 4f)
         {
             waitTime -= 1.5f;
-            points = 0.0f;
+            levelPoints = 0.0f;
+        }
+        if (points == 3f)
+        {
+            Debug.Log("Vi vann!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            // Debug.Log("Vi hittar: " + GameObject.Find("WinCanvas"));
+            //GameObject currentWin = GameObject.FindGameObjectWithTag("Win");
+            WinCanvas.SetActive(true);
+            //currentWin.SetActive(true);
+            //Debug.Log("CANVAS!");
+            //Application.Quit();
         }
     }
 
