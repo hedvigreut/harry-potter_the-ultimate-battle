@@ -23,13 +23,13 @@ public class DictationScript : MonoBehaviour
         //keywordActions.Add("Open", Up);
         //keywordActions.Add("Avaada Kedavra", Down);
         //keywordActions.Add("Kill", Left);
-        //keywordActions.Add("Right", Right);
+        keywordActions.Add("Right", Right);
         //keywordActions.Add("Down", Heleo);
 
         keywordActions.Add("Soul sucker", Up);
         keywordActions.Add("Avaada Kedavra", Down);
         keywordActions.Add("Kill", Left);
-        keywordActions.Add("Monster", Right);
+        //keywordActions.Add("Monster", Right);
         keywordActions.Add("Door", Heleo);
 
 
