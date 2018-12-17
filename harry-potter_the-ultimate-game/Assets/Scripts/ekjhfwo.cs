@@ -7,7 +7,8 @@ using UnityEngine.UI;
 using UnityEditor;
 using UnityEngine.Windows.Speech;
 
-public class CreateObjects : MonoBehaviour {
+public class CreateObgfjects : MonoBehaviour
+{
 
     public GameObject Soulsucker;
     public GameObject Monster;
@@ -26,7 +27,8 @@ public class CreateObjects : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         objectNameList.Add(Soulsucker);
         objectNameList.Add(Monster);
         objectNameList.Add(Door);
@@ -35,59 +37,22 @@ public class CreateObjects : MonoBehaviour {
         float points = 0.0f;
         updatePoints();
 
-        keywordActions.Add("Soul sucker", DestroyByVoiceS);
-        keywordActions.Add("Avaada Kedavra", DestroyByVoiceM);
-        //keywordActions.Add("Kill", DestroyByVoiceD);
-        //keywordActions.Add("Monster", DestroyByVoiceS);
-        keywordActions.Add("Door", DestroyByVoiceD);
+        keywordActions.Add("Soul sucker", DestroyObject);
+        keywordActions.Add("Avaada Kedavra", DestroyObject);
+        keywordActions.Add("Kill", DestroyObject);
+        keywordActions.Add("Monster", DestroyObject);
+        keywordActions.Add("Door", DestroyObject);
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognized;
         keywordRecognizer.Start();
     }
 
-    void DestroyByVoiceS()
-    {
-        DestroyByVoice("Soul");
-    }
-    void DestroyByVoiceD()
-    {
-        DestroyByVoice("Door");
-    }
-    void DestroyByVoiceM()
-    {
-        DestroyByVoice("Monster");
-    }
-
-    void DestroyByVoice(String tag)
-    {
-        if (playingObject.tag == "Soul" && tag == "Soul")
-        {
-            DestroyObject();
-            points += 1;
-            updatePoints();
-            Invoke("createObject", waitTime);
-        }
-        else if (playingObject.tag == "Monster" && tag == "Monster")
-        {
-            DestroyObject();
-            points += 1;
-            updatePoints();
-            Invoke("createObject", waitTime);
-        }
-        else if (playingObject.tag == "Door" && tag == "Door")
-        {
-            DestroyObject();
-            points += 1;
-            updatePoints();
-            Invoke("createObject", waitTime);
-        }
-    }
-
 
     // Update is called once per frame
-    void Update() {
-        /*
+    void Update()
+    {
+
         if (playingObject.tag == "Soul" && Input.GetKeyDown("n"))
         {
             DestroyObject();
@@ -109,8 +74,8 @@ public class CreateObjects : MonoBehaviour {
             updatePoints();
             Invoke("createObject", waitTime);
         }
-*/
 
+        Debug.Log("Points: " + points);
         if (points == 4f)
         {
             waitTime -= 1.5f;
@@ -162,21 +127,18 @@ public class CreateObjects : MonoBehaviour {
 
     void DestroyObject()
     {
-        if (playingObject.tag == "Monster")
+
+        if (gameObject.tag == "Monster")
         {
-            Debug.Log("Monsterrrrr");
             Destroy(GameObject.Find("Voldemort(Clone)"));
-        } else if (playingObject.tag == "Soul")
+        }
+        else if (gameObject.tag == "Soul")
         {
-            Debug.Log("soullllll");
             Destroy(GameObject.Find("Dementor(Clone)"));
-        } else if(playingObject.tag == "Door")
+        }
+        else
         {
-            Debug.Log("dooooooor");
             Destroy(GameObject.Find("Door(Clone)"));
-        } else
-        {
-            Debug.Log("Ingen tag");
         }
     }
 }

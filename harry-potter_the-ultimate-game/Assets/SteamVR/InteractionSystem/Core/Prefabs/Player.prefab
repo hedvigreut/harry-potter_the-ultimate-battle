@@ -1496,3 +1496,6 @@ MonoBehaviour:
   Soulsucker: {fileID: 1323556342776480, guid: 4ef3e370ba3c6304b9653240078cf426, type: 2}
   Monster: {fileID: 1831749009404168, guid: f62e3772f8800ad499f41ec609b1f70a, type: 2}
   Door: {fileID: 1516699440098790, guid: afa5e71d50e895f4281114ec6115f1bd, type: 2}
+  countText: {fileID: 0}
+  points: 0
+  waitTime: 2

@@ -9,12 +9,6 @@ using UnityEngine.Windows.Speech;
 
 public class DictationScript : MonoBehaviour
 {
-    // [SerializeField]
-    //private Rigidbody cubee;
-
-    // [SerializeField]
-    //private Transform transformCube;
-
     private Dictionary<string, Action> keywordActions = new Dictionary<string, Action>();
     private KeywordRecognizer keywordRecognizer;
 
