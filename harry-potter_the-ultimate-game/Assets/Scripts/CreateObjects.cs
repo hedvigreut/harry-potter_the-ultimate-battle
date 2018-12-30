@@ -7,7 +7,8 @@ using UnityEngine.UI;
 using UnityEditor;
 using UnityEngine.Windows.Speech;
 
-public class CreateObjects : MonoBehaviour {
+public class CreateObjects : MonoBehaviour
+{
 
     public GameObject Soulsucker;
     public GameObject Monster;
@@ -28,7 +29,8 @@ public class CreateObjects : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         objectNameList.Add(Soulsucker);
         objectNameList.Add(Monster);
         objectNameList.Add(Door);
@@ -92,7 +94,8 @@ public class CreateObjects : MonoBehaviour {
 
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         if (levelPoints == 4f)
         {
             waitTime -= 1.5f;
@@ -158,15 +161,18 @@ public class CreateObjects : MonoBehaviour {
         {
             Debug.Log("Monsterrrrr");
             Destroy(GameObject.Find("Voldemort(Clone)"));
-        } else if (playingObject.tag == "Soul")
+        }
+        else if (playingObject.tag == "Soul")
         {
             Debug.Log("soullllll");
             Destroy(GameObject.Find("Dementor(Clone)"));
-        } else if(playingObject.tag == "Door")
+        }
+        else if (playingObject.tag == "Door")
         {
             Debug.Log("dooooooor");
             Destroy(GameObject.Find("Door(Clone)"));
-        } else
+        }
+        else
         {
             Debug.Log("Ingen tag");
         }
