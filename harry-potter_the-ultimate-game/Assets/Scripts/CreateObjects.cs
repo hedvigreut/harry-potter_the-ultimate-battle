@@ -20,6 +20,9 @@ public class CreateObjects : MonoBehaviour
     public float points;
 
     public float waitTime = 2f;
+    public float speed;
+    public Transform target;
+
 
     List<GameObject> objectNameList = new List<GameObject>();
     private GameObject playingObject;
@@ -40,11 +43,11 @@ public class CreateObjects : MonoBehaviour
         float levelPoints = 0.0f;
         updatePoints();
 
-        keywordActions.Add("Soul sucker", DestroyByVoiceS);
-        keywordActions.Add("Avaada Kedavra", DestroyByVoiceM);
+        keywordActions.Add("Go away", DestroyByVoiceS);
+        keywordActions.Add("Slay", DestroyByVoiceM);
         //keywordActions.Add("Kill", DestroyByVoiceD);
         //keywordActions.Add("Monster", DestroyByVoiceS);
-        keywordActions.Add("Door", DestroyByVoiceD);
+        keywordActions.Add("Open", DestroyByVoiceD);
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognized;
@@ -92,16 +95,28 @@ public class CreateObjects : MonoBehaviour
         }
     }
 
+    void MoveEnemies()
+    {
+        
+        Debug.Log("Moving!");
+        // The step size is equal to speed times frame time.
+        float step = speed * Time.deltaTime;
+        // Move our position a step closer to the target.
+        transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+    }
+
 
     // Update is called once per frame
     void Update()
     {
+        MoveEnemies();
+
         if (levelPoints == 4f)
         {
             waitTime -= 1.5f;
             levelPoints = 0.0f;
         }
-        if (points == 3f)
+        if (points == 6f)
         {
             Debug.Log("Vi vann!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             // Debug.Log("Vi hittar: " + GameObject.Find("WinCanvas"));

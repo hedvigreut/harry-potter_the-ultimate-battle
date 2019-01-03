@@ -1501,3 +1501,5 @@ MonoBehaviour:
   levelPoints: 0
   points: 0
   waitTime: 2
+  speed: 0
+  target: {fileID: 0}

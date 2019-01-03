@@ -1046,7 +1046,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Points
 --- !u!222 &585336738
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1441,6 +1441,11 @@ Prefab:
       propertyPath: countText
       value: 
       objectReference: {fileID: 585336737}
+    - target: {fileID: 114550779371748120, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2079424126}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
   m_IsPrefabAsset: 0
@@ -2216,7 +2221,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4034723671351034, guid: 3c1a18171b01f2d4c902ab5efcc959bc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.33
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 4034723671351034, guid: 3c1a18171b01f2d4c902ab5efcc959bc, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2573,3 +2578,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!4 &2079424126 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1210920766}
