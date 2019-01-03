@@ -436,7 +436,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 494198}
@@ -1494,7 +1494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Soulsucker: {fileID: 1323556342776480, guid: 4ef3e370ba3c6304b9653240078cf426, type: 2}
-  Monster: {fileID: 1831749009404168, guid: f62e3772f8800ad499f41ec609b1f70a, type: 2}
+  Monster: {fileID: 1554566693770650, guid: 3c1a18171b01f2d4c902ab5efcc959bc, type: 2}
   Door: {fileID: 1516699440098790, guid: afa5e71d50e895f4281114ec6115f1bd, type: 2}
   WinCanvas: {fileID: 0}
   countText: {fileID: 0}
