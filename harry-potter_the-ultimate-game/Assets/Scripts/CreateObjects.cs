@@ -14,10 +14,11 @@ public class CreateObjects : MonoBehaviour
     public GameObject Monster;
     public GameObject Door;
     public GameObject WinCanvas;
+    public GameObject prefab;
 
     public Text countText;
     public float levelPoints;
-    public float points;
+    public int points;
 
     public float waitTime = 2f;
     public float speed;
@@ -39,12 +40,12 @@ public class CreateObjects : MonoBehaviour
         objectNameList.Add(Door);
         createObject();
 
-        float points = 0.0f;
+        points = 0;
         float levelPoints = 0.0f;
         updatePoints();
 
         keywordActions.Add("Go away", DestroyByVoiceS);
-        keywordActions.Add("Slay", DestroyByVoiceM);
+        keywordActions.Add("Wipe out", DestroyByVoiceM);
         //keywordActions.Add("Kill", DestroyByVoiceD);
         //keywordActions.Add("Monster", DestroyByVoiceS);
         keywordActions.Add("Open", DestroyByVoiceD);
@@ -109,7 +110,7 @@ public class CreateObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveEnemies();
+
 
         if (levelPoints == 4f)
         {
@@ -130,7 +131,8 @@ public class CreateObjects : MonoBehaviour
 
     void updatePoints()
     {
-        countText.text = "Count: " + points.ToString();
+        //countText.text = "Count: " + points.ToString();
+        countText.text = "Points: " + points.ToString();
     }
 
     private void OnKeywordsRecognized(PhraseRecognizedEventArgs args)
@@ -169,6 +171,7 @@ public class CreateObjects : MonoBehaviour
 
         Instantiate(playingObject);
     }
+
 
     void DestroyObject()
     {

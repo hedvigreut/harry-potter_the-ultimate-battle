@@ -470,6 +470,141 @@ Transform:
   m_Father: {fileID: 536543445}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &228137662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 228137663}
+  - component: {fileID: 228137667}
+  - component: {fileID: 228137666}
+  - component: {fileID: 228137665}
+  - component: {fileID: 228137664}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &228137663
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228137662}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1684228429}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -330.5, y: -318}
+  m_SizeDelta: {x: 317, y: 373.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!102 &228137664
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228137662}
+  m_Text: You win!
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1.48
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 12800000, guid: 67c52e275ae12a6419d17cb746fe8cbc, type: 3}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+--- !u!23 &228137665
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228137662}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 67c52e275ae12a6419d17cb746fe8cbc, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &228137666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228137662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9433962, g: 0.63972765, b: 0.19134924, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 67c52e275ae12a6419d17cb746fe8cbc, type: 3}
+    m_FontSize: 66
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 126
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Excellent! You''re a wizard, Larry!
+
+    Say "Replay" to restart the game.'
+--- !u!222 &228137667
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228137662}
+  m_CullTransparentMesh: 0
 --- !u!1 &246276701
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,7 +1130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &585336736
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1007,7 +1142,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1684228429}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1026,7 +1161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.80241585, a: 1}
+  m_Color: {r: 0.94509804, g: 0.6392157, b: 0.19215687, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1034,19 +1169,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 67c52e275ae12a6419d17cb746fe8cbc, type: 3}
+    m_FontSize: 66
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 6
+    m_MaxSize: 66
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Points
+  m_Text: 'Points: 0'
 --- !u!222 &585336738
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1319,31 +1454,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2365593
+      value: 1.180843
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.81393933
+      value: -0.8092842
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.402188
+      value: 8.203385
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.5737972
+      value: -0.49336797
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.51159406
+      value: 0.5071861
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.42561686
+      value: 0.48649088
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.47736636
+      value: 0.51252025
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_RootOrder
@@ -1351,15 +1486,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -100.482994
+      value: -92.284996
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -88.13199
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 83.439995
+      value: 177.433
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f45e1f618bf3dc24b84a37264fd0fa7d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1804,6 +1939,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 228137663}
   - {fileID: 585336736}
   m_Father: {fileID: 0}
   m_RootOrder: 5
