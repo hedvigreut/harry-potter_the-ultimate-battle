@@ -21,7 +21,7 @@ public class AliveScript : MonoBehaviour
     void Update()
     {
 
-        this.gameObject.transform.position = new Vector3(startingPos.x + (Mathf.Sin(Time.time * speed) * amount), startingPos.y + ((Mathf.Sin(Time.time * speed) * amount)), startingPos.z + ((Mathf.Sin(Time.time * speed) * amount)));
+        this.gameObject.transform.localPosition = new Vector3(startingPos.x + (Mathf.Sin(Time.time * speed) * amount), startingPos.y + ((Mathf.Sin(Time.time * speed) * amount)), startingPos.z + ((Mathf.Sin(Time.time * speed) * amount)));
 
 
 

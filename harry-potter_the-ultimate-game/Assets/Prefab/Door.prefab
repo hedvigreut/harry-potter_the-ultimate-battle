@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4884101364230590}
   - component: {fileID: 82421499061114470}
   - component: {fileID: 114257184127143130}
+  - component: {fileID: 114280249072971810}
+  - component: {fileID: 136418858620495218}
   m_Layer: 0
   m_Name: Door
   m_TagString: Door
@@ -52,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1539298675492612}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5512025, y: -1.5404851, z: 0.6603843}
+  m_LocalPosition: {x: 0, y: 0.18, z: 0}
   m_LocalScale: {x: 0.008, y: 0.008, z: 0.008}
   m_Children: []
   m_Father: {fileID: 4884101364230590}
@@ -65,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1516699440098790}
   m_LocalRotation: {x: -0, y: 0.99990076, z: -0, w: 0.014087474}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0.43734995, y: 0, z: -7.988036}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4112855563695306}
@@ -220,3 +222,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f22c20083d1ef4a802713c064185bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114280249072971810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1516699440098790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 510f09409209a8e419511b640640772a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  offset: 0.5
+  floorOffset: 2
+--- !u!136 &136418858620495218
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1516699440098790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

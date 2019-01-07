@@ -6,8 +6,8 @@ public class HoverScript : MonoBehaviour
 {
 
     Vector3 startingPos;
-    float speed = 2.5f; //how fast it shakes
-    float amount = 0.04f; //how much it shakes
+    public float speed = 2.5f; //how fast it shakes
+    public float amount = 0.04f; //how much it shakes
 
     // Use this for initialization
     void Start()
@@ -20,11 +20,7 @@ public class HoverScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         this.gameObject.transform.position = new Vector3(startingPos.x + (Mathf.Sin(Time.time * speed) * amount), startingPos.y + ((Mathf.Sin(Time.time * speed) * amount)), startingPos.z + ((Mathf.Sin(Time.time * speed) * amount)));
-
-
-
     }
 
 }

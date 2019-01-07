@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 114550779371748120}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 476540}
   - component: {fileID: 11450312}
   - component: {fileID: 114000011273627542}
+  - component: {fileID: 114355700760927260}
   m_Layer: 26
   m_Name: LeftHand
   m_TagString: Untagged
@@ -244,6 +245,7 @@ GameObject:
   - component: {fileID: 485514}
   - component: {fileID: 11401046}
   - component: {fileID: 114000011957598740}
+  - component: {fileID: 114308222935576970}
   m_Layer: 26
   m_Name: RightHand
   m_TagString: Untagged
@@ -436,7 +438,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.46}
+  m_LocalPosition: {x: 0, y: 0.104, z: -2.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 494198}
@@ -1482,6 +1484,36 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!114 &114308222935576970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca7a529164e5594e929fbe9380e1dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 2
+  controllerPose: {fileID: 114000011957598740}
+  teleportAction: {fileID: 11400000, guid: d4fbb67627aacc943a738dc7f18ec7c9, type: 2}
+  laserPrefab: {fileID: 0}
+--- !u!114 &114355700760927260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca7a529164e5594e929fbe9380e1dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 1
+  controllerPose: {fileID: 114000011957598740}
+  teleportAction: {fileID: 11400000, guid: d4fbb67627aacc943a738dc7f18ec7c9, type: 2}
+  laserPrefab: {fileID: 0}
 --- !u!114 &114550779371748120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1493,13 +1525,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e75c6d4749bff4196e517abaf0003f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Soulsucker: {fileID: 1323556342776480, guid: 4ef3e370ba3c6304b9653240078cf426, type: 2}
-  Monster: {fileID: 1554566693770650, guid: 3c1a18171b01f2d4c902ab5efcc959bc, type: 2}
+  Soulsucker: {fileID: 1958453214884216, guid: 4ef3e370ba3c6304b9653240078cf426, type: 2}
+  Monster: {fileID: 1357167851820752, guid: 3c1a18171b01f2d4c902ab5efcc959bc, type: 2}
   Door: {fileID: 1516699440098790, guid: afa5e71d50e895f4281114ec6115f1bd, type: 2}
   WinCanvas: {fileID: 0}
+  prefab: {fileID: 0}
   countText: {fileID: 0}
   levelPoints: 0
   points: 0
   waitTime: 2
   speed: 0
-  target: {fileID: 0}
+  target: {fileID: 447954}

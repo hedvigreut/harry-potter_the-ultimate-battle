@@ -97,20 +97,12 @@ public class CreateObjects : MonoBehaviour
         }
     }
 
-    void MoveEnemies()
-    {
-        
-        Debug.Log("Moving!");
-        // The step size is equal to speed times frame time.
-        float step = speed * Time.deltaTime;
-        // Move our position a step closer to the target.
-        transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-    }
-
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+            createObject();
         if (levelPoints == 4f)
         {
             waitTime -= 1.5f;
@@ -121,11 +113,12 @@ public class CreateObjects : MonoBehaviour
             Debug.Log("Vi vann!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             // Debug.Log("Vi hittar: " + GameObject.Find("WinCanvas"));
             //GameObject currentWin = GameObject.FindGameObjectWithTag("Win");
-            WinCanvas.SetActive(true);
+            //WinCanvas.SetActive(true);
             //currentWin.SetActive(true);
             //Debug.Log("CANVAS!");
             //Application.Quit();
         }
+
     }
 
     void updatePoints()
@@ -145,27 +138,35 @@ public class CreateObjects : MonoBehaviour
         UnityEngine.Random rnd = new UnityEngine.Random();
         int arrayNumber = UnityEngine.Random.Range(0, 3);
 
+        Vector3 spawnVector = new Vector3(UnityEngine.Random.Range(5f, 14f), 0f, UnityEngine.Random.Range(5f, 14f));
         playingObject = objectNameList[arrayNumber];
 
         if (playingObject.tag == "Soul")
         {
             Debug.Log("SOUL");
             //playingObject.transform.localScale = new Vector3(2f, 2f, 2f);
-            playingObject.transform.position = new Vector3(0, 0, 0);
+            //playingObject.transform.position = new Vector3(UnityEngine.Random.Range(5f, 20f), 0f, (UnityEngine.Random.Range(5f, 20f)));
+            playingObject.transform.position = Quaternion.AngleAxis(UnityEngine.Random.Range(0f, 360f), Vector3.up) * spawnVector;
+            Debug.DrawLine(Vector3.zero, Quaternion.AngleAxis(UnityEngine.Random.Range(0f, 360f), Vector3.up) * spawnVector, Color.red, 10f);
 
         }
         else if (playingObject.tag == "Monster")
         {
             Debug.Log("MONSTER");
-            playingObject.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-            playingObject.transform.position = new Vector3(0, 0, 0);
+            //playingObject.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+            //playingObject.transform.position = new Vector3(0, 0, 0);
+            playingObject.transform.position = Quaternion.AngleAxis(UnityEngine.Random.Range(0f, 360f), Vector3.up) * spawnVector;
+            Debug.DrawLine(Vector3.zero, Quaternion.AngleAxis(UnityEngine.Random.Range(0f, 360f), Vector3.up) * spawnVector, Color.red, 10f);
 
         }
         else if (playingObject.tag == "Door")
         {
             Debug.Log("DOOR");
-            playingObject.transform.localScale = new Vector3(1f, 1f, 1f);
-            playingObject.transform.position = new Vector3(0, 2, 0);
+            spawnVector = Vector3.ClampMagnitude(spawnVector, 8f);
+            //playingObject.transform.localScale = new Vector3(1f, 1f, 1f);
+            //playingObject.transform.position = new Vector3(0, 2, 0);
+            playingObject.transform.position = Quaternion.AngleAxis(UnityEngine.Random.Range(0f, 360f), Vector3.up) * spawnVector;
+            Debug.DrawLine(Vector3.zero, Quaternion.AngleAxis(UnityEngine.Random.Range(0f, 360f), Vector3.up) * spawnVector, Color.red, 10f);
         }
 
         Instantiate(playingObject);
