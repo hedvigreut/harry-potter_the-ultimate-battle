@@ -35,6 +35,7 @@ public class CreateObjects : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         objectNameList.Add(Soulsucker);
         objectNameList.Add(Monster);
         objectNameList.Add(Door);
@@ -110,8 +111,6 @@ public class CreateObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         if (levelPoints == 4f)
         {
             waitTime -= 1.5f;

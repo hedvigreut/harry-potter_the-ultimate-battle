@@ -198,6 +198,33 @@ Transform:
   m_Father: {fileID: 536543445}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &67912234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1210920766}
+--- !u!114 &67912235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 67912234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca7a529164e5594e929fbe9380e1dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 2
+  controllerPose: {fileID: 67912236}
+  teleportAction: {fileID: 11400000, guid: d4fbb67627aacc943a738dc7f18ec7c9, type: 2}
+  laserPrefab: {fileID: 1932331244993882, guid: 7a82732df2eca2e428e5f79f026e4e80,
+    type: 2}
+--- !u!114 &67912236 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114000011957598740, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1210920766}
+  m_Script: {fileID: 11500000, guid: 9a5fb0ca93b55ef4b8d54b512b103341, type: 3}
 --- !u!1001 &161274166
 Prefab:
   m_ObjectHideFlags: 0
@@ -1153,6 +1180,69 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 585336735}
   m_CullTransparentMesh: 0
+--- !u!1001 &644475006
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4251150280789762, guid: 7a82732df2eca2e428e5f79f026e4e80, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251150280789762, guid: 7a82732df2eca2e428e5f79f026e4e80, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251150280789762, guid: 7a82732df2eca2e428e5f79f026e4e80, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251150280789762, guid: 7a82732df2eca2e428e5f79f026e4e80, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251150280789762, guid: 7a82732df2eca2e428e5f79f026e4e80, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251150280789762, guid: 7a82732df2eca2e428e5f79f026e4e80, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251150280789762, guid: 7a82732df2eca2e428e5f79f026e4e80, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251150280789762, guid: 7a82732df2eca2e428e5f79f026e4e80, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a82732df2eca2e428e5f79f026e4e80, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &712066517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1210920766}
+--- !u!114 &712066518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 712066517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca7a529164e5594e929fbe9380e1dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 1
+  controllerPose: {fileID: 67912236}
+  teleportAction: {fileID: 11400000, guid: d4fbb67627aacc943a738dc7f18ec7c9, type: 2}
+  laserPrefab: {fileID: 1932331244993882, guid: 7a82732df2eca2e428e5f79f026e4e80,
+    type: 2}
 --- !u!1 &744532943
 GameObject:
   m_ObjectHideFlags: 0
