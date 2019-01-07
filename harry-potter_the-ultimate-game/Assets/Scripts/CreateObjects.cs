@@ -45,7 +45,7 @@ public class CreateObjects : MonoBehaviour
         updatePoints();
 
         keywordActions.Add("Go away", DestroyByVoiceS);
-        keywordActions.Add("Wipe out", DestroyByVoiceM);
+        keywordActions.Add("Destroy", DestroyByVoiceM);
         //keywordActions.Add("Kill", DestroyByVoiceD);
         //keywordActions.Add("Monster", DestroyByVoiceS);
         keywordActions.Add("Open", DestroyByVoiceD);
@@ -151,7 +151,7 @@ public class CreateObjects : MonoBehaviour
         if (playingObject.tag == "Soul")
         {
             Debug.Log("SOUL");
-            playingObject.transform.localScale = new Vector3(2f, 2f, 2f);
+            //playingObject.transform.localScale = new Vector3(2f, 2f, 2f);
             playingObject.transform.position = new Vector3(0, 0, 0);
 
         }
@@ -178,7 +178,7 @@ public class CreateObjects : MonoBehaviour
         if (playingObject.tag == "Monster")
         {
             Debug.Log("Monsterrrrr");
-            Destroy(GameObject.Find("Voldemort(Clone)"));
+            Destroy(GameObject.Find("voldemorta(Clone)"));
         }
         else if (playingObject.tag == "Soul")
         {
